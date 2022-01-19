@@ -1,0 +1,451 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  overflow: hidden;
+}
+
+.linea-1 {
+  width: 0;
+  position: absolute;
+  top: 50%;
+  animation-name: linear, doblelinea1, desaparecer;
+  animation-fill-mode: forwards, forwards, forwards;
+  animation-delay: 0s, 2s, 3.5s;
+  animation-duration: 1s, 1s, 1s;
+  animation-timing-function: ease, ease-out;
+}
+
+.linea-2 {
+  position: absolute;
+  top: 50%;
+  animation-name: doblelinea;
+  animation-delay: 2s;
+  animation-direction: alternate;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+}
+
+.cuadrado-1 {
+  border: 1px solid #000;
+  background-color: inherit;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation-name: cuadrado-1, rotarcuadrado, desaparecer;
+  animation-delay: 0.5s, 1.5s, 3.5s;
+  animation-duration: 1s, 1s, 1s;
+  animation-fill-mode: forwards, forwards, forwards;
+}
+
+.cuadrado-2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: salmon;
+  animation-name: cuadrado-1, rotarcuadrado, desaparecer;
+  animation-delay: 1s, 1.5s, 3.5s;
+  animation-duration: 1.5s, 2s, 1s;
+  animation-fill-mode: forwards, forwards, forwards;
+}
+
+.cuadrado-3 {
+  width: 0;
+  height: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: red;
+  z-index: 100;
+  animation-name: cuadrado-2;
+  animation-delay: 1s;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
+.circulo {
+  z-index: 10;
+  background-color: inherit;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 1px solid #000;
+  border-radius: 100%;
+  animation-name: circulo;
+  animation-delay: 2s;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+}
+
+.circulo-2 {
+  z-index: 10;
+  background-color: inherit;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 1px solid #000;
+  border-radius: 100%;
+  animation-name: circulo;
+  animation-delay: 2.5s;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+}
+
+.circulo-3 {
+  z-index: 10;
+  background-color: inherit;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 1px solid #000;
+  border-radius: 100%;
+  animation-name: circulo;
+  animation-delay: 3s;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+}
+
+.div-1 {
+  position: fixed;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(90deg);
+  width: 0;
+  height: 0;
+  background-color: lightslategrey;
+  z-index: 9;
+  animation-name: lineas;
+  animation-delay: 2s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: initial;
+  animation-duration: 1s;
+}
+
+.div-2 {
+  position: absolute;
+  top: 40%;
+  left: 45%;
+  transform: translate(-50%, -50%) rotate(45deg);
+  width: 0;
+  height: 2px;
+  background-color: lightslategrey;
+  z-index: 9;
+  animation-name: lineas;
+  animation-delay: 2s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: initial;
+  animation-duration: 1s;
+}
+
+.div-3 {
+  position: absolute;
+  top: 60%;
+  left: 45%;
+  transform: translate(-50%, -50%) rotate(-45deg);
+  width: 0;
+  height: 2px;
+  background-color: lightslategrey;
+  z-index: 9;
+  animation-name: lineas;
+  animation-delay: 2s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: initial;
+  animation-duration: 1s;
+}
+
+.div-4 {
+  position: absolute;
+  top: 40%;
+  left: 55%;
+  transform: translate(-50%, -50%) rotate(-45deg);
+  width: 0;
+  height: 2px;
+  background-color: lightslategrey;
+  z-index: 9;
+  animation-name: lineas;
+  animation-delay: 2s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: initial;
+  animation-duration: 1s;
+}
+
+.div-5 {
+  position: absolute;
+  top: 60%;
+  left: 55%;
+  transform: translate(-50%, -50%) rotate(45deg);
+  width: 0;
+  height: 2px;
+  background-color: lightslategrey;
+  z-index: 9;
+  animation-name: lineas;
+  animation-delay: 2s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: initial;
+  animation-duration: 1s;
+}
+
+.div-6 {
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(90deg);
+  width: 0;
+  height: 2px;
+  background-color: lightslategrey;
+  z-index: 9;
+  animation-name: lineas;
+  animation-delay: 2s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: initial;
+  animation-duration: 1s;
+}
+
+.div-7 {
+  position: absolute;
+  top: 50%;
+  left: 60%;
+  transform: translate(-50%, -50%);
+  width: 0;
+  height: 2px;
+  background-color: lightslategrey;
+  z-index: 9;
+  animation-name: lineas;
+  animation-delay: 2s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: initial;
+  animation-duration: 1s;
+}
+
+.div-8 {
+  position: absolute;
+  top: 50%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+  width: 0;
+  height: 2px;
+  background-color: lightslategrey;
+  z-index: 9;
+  animation-name: lineas;
+  animation-delay: 2s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: initial;
+  animation-duration: 1s;
+}
+
+.tringulo {
+  width: 25px;
+  border-right: 15px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-left: 20px solid transparent;
+  animation: logo 1s ease 3s 1 normal forwards; 
+}
+
+.container-cube {
+  width: 75px;
+  height: 75px;
+  margin: auto;
+  perspective: 1000px;
+}
+.cube {
+  width: 0;
+  height: 0;
+  position: relative;
+  transform-style: preserve-3d;
+  animation: spin 2s ease-in-out;
+  animation-fill-mode: forwards;
+  animation-delay: 2s;
+}
+
+.face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: red;
+}
+
+.top {
+  transform: rotateX(90deg) translateZ(37px);
+  background-color: maroon;
+  animation: logo2 1s ease 4s 1 normal forwards;
+}
+.bottom {
+  transform: rotateX(-90deg) translateZ(37px);
+}
+.right {
+  transform: rotateY(90deg) translateZ(37px);
+}
+.left {
+  transform: rotateY(-90deg) translateZ(37px);
+}
+.front {
+  transform: translateZ(37px);
+}
+.back {
+  transform: translateZ(-37px);
+}
+
+@keyframes cuadrado-1 {
+  0% {
+    width: 0;
+    height: 0;
+  }
+
+  100% {
+    width: 250px;
+    height: 250px;
+  }
+}
+
+@keyframes rotarcuadrado {
+  0% {
+    transform: translate(-50%, -50%) rotate(0);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(-45deg);
+  }
+}
+
+@keyframes cuadrado-2 {
+  0% {
+    width: 0;
+    height: 0;
+  }
+
+  100% {
+    width: 75px;
+    height: 75px;
+  }
+}
+
+@keyframes linear {
+  0% {
+    width: 0;
+  }
+  50% {
+    width: 50%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+@keyframes circulo {
+  0% {
+    width: 0;
+    height: 0;
+  }
+
+  100% {
+    width: 1500px;
+    height: 1500px;
+  }
+}
+
+@keyframes doblelinea {
+  0% {
+    width: 100%;
+    transform: rotate(0);
+  }
+  25% {
+    width: 100%;
+    transform: rotate(45deg);
+  }
+  100% {
+    width: 100%;
+    transform: rotate(0);
+  }
+}
+
+@keyframes doblelinea1 {
+  0% {
+    width: 100%;
+    transform: rotate(0);
+  }
+  25% {
+    width: 100%;
+    transform: rotate(-45deg);
+  }
+  100% {
+    width: 100%;
+    transform: rotate(0);
+  }
+}
+
+@keyframes lineas {
+  0% {
+    width: 0;
+    height: 0;
+  }
+  100% {
+    width: 100px;
+    height: 2px;
+  }
+}
+
+@keyframes spin {
+  0% {
+    width: 100%;
+    height: 100%;
+    transform: rotateX(0deg) rotateY(0deg);
+  }
+  25% {
+    width: 100%;
+    height: 100%;
+    transform: rotateX(-90deg);
+  }
+  50% {
+    width: 100%;
+    height: 100%;
+    transform: rotateX(-180deg) rotateY(90deg);
+  }
+  70% {
+    width: 100%;
+    height: 100%;
+    transform: rotateX(-270deg) rotateY(180deg);
+  }
+  85% {
+    width: 100%;
+    height: 100%;
+    transform: rotateX(-360deg) rotateY(270deg);
+  }
+  100% {
+    width: 100%;
+    height: 100%;
+    transform: rotateX(-450deg) rotateY(360deg);
+  }
+}
+
+@keyframes desaparecer {
+  100% {
+    background-color: #fff;
+    border: 1px solid #fff;
+  }
+}
+
+@keyframes logo {
+  0%,100% {
+    border-top: 15px solid #fff;
+  }
+}
+
+@keyframes logo2 {
+  0%{
+    border: 2px solid maroon;
+  }
+
+  100%{
+    border: 2px solid maroon;
+    background-color: #fff;
+  }
+}
